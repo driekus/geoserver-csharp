@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using GeoserverClient;
+using GeoserverClient.Model;
 
 namespace GeoserverClientWindowsForms
 {
@@ -19,16 +15,15 @@ namespace GeoserverClientWindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var url = "http://www.opengeocoder.net/API/autocomplete?term=Utrecht";
-            new GeoserverRestClient().GetAsyncResponse(url);
-
-
-            // todo: new GeoserverRestClient().ExecuteAsync(url, callback(response.data));
+            GeoserverRestClient.GetAdressen(tbPostcode.Text,Int32.Parse(tbHuisnummer.Text), callback);
+            tbResult.Text = "Even geduld...";
         }
 
-        private void callback(List<String> strings)
+        private void callback(List<Adres> adressen)
         {
-            
+
+            var text=adressen!=null?"Aantal adressen:" + adressen.Count.ToString(): "niks gevonden helaas.";
+            tbResult.Invoke(new MethodInvoker(delegate { tbResult.Text=text; })); 
         }
     }
 }

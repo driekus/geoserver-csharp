@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverClient", "Geoserve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverClientWindowsForms", "GeoserverClientWindowsForms\GeoserverClientWindowsForms.csproj", "{3021A619-6A75-4C96-9B33-7B865C2FE49F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp", "RestSharp\RestSharp.csproj", "{FF9AD615-44B1-417F-A30A-6E155D724ADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{C56D4AA2-F03C-4A24-8A4B-B80E30237301}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C56D4AA2-F03C-4A24-8A4B-B80E30237301}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C56D4AA2-F03C-4A24-8A4B-B80E30237301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9AD615-44B1-417F-A30A-6E155D724ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9AD615-44B1-417F-A30A-6E155D724ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9AD615-44B1-417F-A30A-6E155D724ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9AD615-44B1-417F-A30A-6E155D724ADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

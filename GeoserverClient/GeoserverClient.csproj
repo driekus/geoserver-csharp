@@ -42,6 +42,12 @@
       <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestSharp\RestSharp.csproj">
+      <Project>{ff9ad615-44b1-417f-a30a-6e155d724adb}</Project>
+      <Name>RestSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
