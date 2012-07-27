@@ -20,5 +20,6 @@ namespace GeoserverClient.Model
         public string Geometrie { get; set; }
         public string GeometrieRD { get; set; }
         public List<Adres> Adressen { get; set; }
+        // testadd
     }
 }
