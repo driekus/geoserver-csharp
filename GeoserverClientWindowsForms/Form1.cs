@@ -15,7 +15,7 @@ namespace GeoserverClientWindowsForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GeoserverRestClient.GetAdressen(tbPostcode.Text,Int32.Parse(tbHuisnummer.Text), callback);
+            GeoserverAgn.GetAdressen(tbPostcode.Text,Int32.Parse(tbHuisnummer.Text), callback);
             tbResult.Text = "Even geduld...";
         }
 
