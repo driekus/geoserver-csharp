@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverClient", "GeoserverClient\GeoserverClient.csproj", "{C56D4AA2-F03C-4A24-8A4B-B80E30237301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoserverClientWindowsForms", "GeoserverClientWindowsForms\GeoserverClientWindowsForms.csproj", "{3021A619-6A75-4C96-9B33-7B865C2FE49F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgnWindowsFormsSample", "GeoserverClientWindowsForms\AgnWindowsFormsSample.csproj", "{3021A619-6A75-4C96-9B33-7B865C2FE49F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestSharp", "RestSharp\RestSharp.csproj", "{FF9AD615-44B1-417F-A30A-6E155D724ADB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{F14ABE69-1E47-4669-B7C0-72693F1DFAE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3021A619-6A75-4C96-9B33-7B865C2FE49F} = {F14ABE69-1E47-4669-B7C0-72693F1DFAE8}
 	EndGlobalSection
 EndGlobal
