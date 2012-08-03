@@ -17,11 +17,11 @@ namespace GeoserverClientWindowsForms
         {
             if (rdbAdres.Checked)
             {
-                GeoserverAgn.GetAdressen(tbPostcode.Text, Int32.Parse(tbHuisnummer.Text), callback, tbToevoeging.Text);
+                GeoserverAgn.GetAdressen(tbPostcode.Text, callback,tbHuisnummer.Text, tbHuisletter.Text, tbToevoeging.Text);
             }
             else
             {
-                GeoserverAgn.GetGebouwen(tbPostcode.Text, Int32.Parse(tbHuisnummer.Text), callback, tbToevoeging.Text);
+                GeoserverAgn.GetGebouwen(tbPostcode.Text, callback, tbHuisnummer.Text, tbHuisletter.Text, tbToevoeging.Text);
             }
             tbResult.Text = "Even geduld...";
         }
